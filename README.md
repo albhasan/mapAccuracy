@@ -29,7 +29,7 @@ install_github("albhasan/mapAccuracy")
 
 ## Use
 
-The package take as inputs a confusion matrix resulting from a classification and the are of each class in a reference map.
+The package take as inputs a confusion matrix resulting from a classification and the are of each class in a reference map. The following example was introduced by Pontus Olofsson in one of his videos.
 
 ```R
 library(mapAccuracy)
@@ -48,7 +48,3 @@ ma <- new(Class = "MapAccuracy", confusion_matrix = confusion_matrix, class_area
 acc <- compute(ma)
 acc
 ```
-
-
-
-

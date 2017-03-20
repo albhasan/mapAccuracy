@@ -1,3 +1,5 @@
+## This demo was introduced by Pontus Olofsson in one of his videos
+
 # Assume the following confusion matrix and the areas of each class in the reference map
 confusion_matrix <- matrix(c(97, 0, 3, 3, 279, 18, 2, 1, 97), ncol = 3, byrow = TRUE)
 class_areas <- c(22353, 1122543, 610228)
