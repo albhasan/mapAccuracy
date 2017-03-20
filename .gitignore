@@ -1,0 +1,28 @@
+.Ruserdata
+
+
+# History files
+.Rhistory
+
+# Example code in package build process
+*-Ex.R
+
+# R data files from past sessions
+.Rdata
+
+# RStudio files
+.Rproj.user/
+.Rproj.user
+
+# Man files
+man/
+.Rd
+.Rd~
+README.md~
+
+# Vignete files
+vignettes/
+.pdf
+.log
+.tex
+.gz
