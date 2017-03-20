@@ -162,6 +162,19 @@ setMethod("setClassAreas","MapAccuracy",
 #' @param object A MapAccuracy object
 #' @docType methods
 #' @export
+#' @return A list of:
+#'   confint95. A list of the two vectors of the 95 per-cent confidence intervals.
+#'   The vector corresponds to the superior and inferior confidence limits
+#'
+#'   Accuracy. A list of vectors that represent the overall, user, and producer
+#'   acuracies. Each element in each vector correspond to a class.
+#' @examples
+#' classnames <-  c("deforestation", "forest", "no forest")
+#' confusion_matrix <- matrix(c(97, 0, 3, 3, 279, 18, 2, 1, 97), ncol = 3, byrow = TRUE)
+#' class_areas <- c(22353, 1122543, 610228)
+#'
+#' ma <- new(Class = "MapAccuracy", confusion_matrix = confusion_matrix, class_areas = class_areas)
+#' compute(ma)
 setGeneric("compute",function(object){standardGeneric("compute")})
 
 #' @rdname  compute
